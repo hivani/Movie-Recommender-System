@@ -8,15 +8,43 @@ items are loved, comparable items will be suggested. It depends on properties of
 measure the comparability. The point of content based is that we need to know the content of both 
 the user and items. Recommendations depend on the content of items rather than other user's 
 perspective.
+
 •The film recommender system is valuable in recommending or to predict and filter preferences 
 as indicated by the user's decision.
+
 •Recommender systems are utilized in assortment of regions including movies, music, news, 
 books, article, and social labels.
+
 •It assists the users with exploring through movies that they are searching for which helps the user 
 to save time.
+
 •First and foremost, we get the information of films containing attributes title, movie id and genre 
 and rating and afterwards we combine these two datasets which make a rating information outline 
 with normal rating. With the accomplishment of registration and login module, we have finished 
 the user side and administrator side entry page, The users are shown various movies with respective 
 movie rating, title, cast, crew and so forth, which finishes fundamental review module resulting 
 into view part from user side.
+
+**#Algorithm **
+
+Step 1. Construct a data frame of the genre dataset with movie ID where the rows and genres as 
+columns separated by pipeline character
+
+Step 2. Make a list of all the genres that are available in the dataset. 
+
+Step 3. Iterate through the previously made genre data frame. If a genre is present in a movie, the 
+value of I is assigned to the genre matrix 
+
+Step 4. Then Read the ratings sheet and construct a ratings matrix which assigns I for movies 
+which has rating more than 3 and -1 for movies which has ratings less than or equal to 3
+
+Step 5. Calculate the dot product of the two matrices-genre matrix and ratings matrix. This is the 
+result matrix
+
+Step 6. Convert the result matrix to a binary format. Then f or a negative dot product value, assign 
+0, else assign a value of 1.
+
+Step 7. Calculate the Euclidian distance between the current user and other users. 
+
+Step 8. Reteam the rows which have the minimum distance. These are the recommended movies 
+for the current user
