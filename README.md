@@ -1,7 +1,7 @@
 # Movie-Recommender-System
 Recommender System is a framework that looks to foresee or filter as indicated by the user's choices. Recommender systems are used in an assortment of regions including films, music, news, books, research articles, search questions, social labels, and items overall.Recommender systems produce a rundown of suggestions inany of the two different ways -Collaborative filtering: Collaborative filtering approaches assemble a model from the user's previous conduct (for example things bought or looked by the user) as well as comparative choices made by different users. This model is then used to foresee things (or appraisals for things) that users might have an interest in.Content-based filtering: Content-based filtering approaches involves a progression of discrete attributes of a thing to suggest extra things with comparable properties. Content-based filtering strategies are completely founded on a depiction of the thing and a profile of the user's choices. It suggests items in view of the user's previous decisions made.We will foster a fundamental recommendation system utilizing Python and Pandas.We will concentrate on providing a basic recommendation system by putting forward items that are mostly similar to the particular item, so in our case it’s movies. It suggests what movies are most similar to the user's movie choice
 
-**#Content based algorithm**
+# Content based algorithm
 
 •Content based system suggests items that a user has enjoyed or purposed before. Assuming if any 
 items are loved, comparable items will be suggested. It depends on properties of every items to 
@@ -25,8 +25,8 @@ the user side and administrator side entry page, The users are shown various mov
 movie rating, title, cast, crew and so forth, which finishes fundamental review module resulting 
 into view part from user side.
 
-**#Algorithm **
-
+# Algorithm 
+```sh
 Step 1. Construct a data frame of the genre dataset with movie ID where the rows and genres as 
 columns separated by pipeline character
 
@@ -48,3 +48,5 @@ Step 7. Calculate the Euclidian distance between the current user and other user
 
 Step 8. Reteam the rows which have the minimum distance. These are the recommended movies 
 for the current user
+
+```sh
